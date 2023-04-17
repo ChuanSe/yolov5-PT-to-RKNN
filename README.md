@@ -200,4 +200,5 @@ python export.py --weights best.pt --img 640 --batch 1 --include onnx --opset 12
   python detect.py
   ```
 - 部署完成。
+- 有任何疑问可以发送至邮箱：Chuan5445520@163.com  
 </details>
