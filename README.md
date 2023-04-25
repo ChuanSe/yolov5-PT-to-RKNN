@@ -129,7 +129,7 @@ python export.py --weights best.pt --img 640 --batch 1 --include onnx --opset 12
     IMG_SIZE = 640              #不修改
     CLASSES = ("person")        #修改为你所训练的模型所含的标签
     ```
-  - 将`if __name__ == '__main__':`中的两个语句：
+  - 将`if __name__ == '__main__':`中的语句：
     ```python
     rknn.config(mean_values=[[0, 0, 0]], std_values=[[255, 255, 255]])
     ```
