@@ -131,11 +131,11 @@ python export.py --weights best.pt --img 640 --batch 1 --include onnx --opset 12
     ```
   - 将`if __name__ == '__main__':`中的两个语句：
     ```python
-    rknn.config(mean_values=[[0, 0, 0]], std_values=[[255, 255, 255]], target_platform='rk3588')
+    rknn.config(mean_values=[[0, 0, 0]], std_values=[[255, 255, 255]])
     ```
   - 修改为
     ```python
-    rknn.config(mean_values=[[0, 0, 0]], std_values=[[255, 255, 255]])
+    rknn.config(mean_values=[[0, 0, 0]], std_values=[[255, 255, 255]], target_platform='rk3588')
     ```
   - 想要程序执行完，展示推理效果，将以下语句：
     ```python
